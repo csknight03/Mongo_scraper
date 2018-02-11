@@ -1,0 +1,41 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron {
+    background-image: url("https://isithealthful.files.wordpress.com/2015/05/img_2990.jpg?w=1100&h=500&crop=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.title-1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 80px;
+    color: white;
+}
+
+.title-2 {
+    font-family: 'Poiret One', cursive;
+    font-size: 40px;
+    color: white;
+}
+
+.wrapper {
+    background-image: url("../assets/img/rubber_grip.png");
+    background-repeat: repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.card {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: lightgray !important;
+}
