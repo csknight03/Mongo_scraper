@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Poiret+One" rel="stylesheet">
-    <script src="main.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 <body>
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-inverse bg-inverse">
@@ -42,27 +42,51 @@
 </div>
 <div class="wrapper">
 <div class="card">
-    <h3 class="card-header">Sunday 180211</h3>
+    <h3 class="card-header" class="title">Sunday 180211</h3>
     <div class="card-block">
 <h4 class="card-title">Front squat 10-10-10-10-10 reps </h4>
 <p class="card-text">Scaling Athletes at all skill levels can perform 10-rep lifts. Experienced athletes can go as heavy as possible, while newer
     athletes can use this workout as an opportunity to drill the movement.</p>
-    <a href="#" class="btn btn-success">Enter Stats</a>
+    <div id="statWrapper" class="hide">
+    <hr>
+    <form>
+        <div class="form-group">
+            <label for="exampleTextarea">WOD Notes</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="save">Save</button>
+    </form>
+    <hr>
+    </div>
+    <a href="#" class="btn btn-success" id="recordStats">Record Stats</a>
     <a href="#" class="btn btn-danger">Save WOD</a>
     <a href="#" class="btn btn-outline-secondary">Update Stats</a>
     </div>
 </div>
 <div class="card">
-    <h3 class="card-header">Saturday 180210</h3>
+<h3 class="card-header">
+<a href="#" class="title">Saturday 180210</a>
+</h3>
     <div class="card-block">
         <h4 class="card-title">Rest Day</h4>
 <p class="card-text">"In Sweeping War on Obesity, Chile Slays Tony the Tiger," The New York Times.</p>
-    <a href="#" class="btn btn-success">Enter Stats</a>
+<div id="statWrapper" class="hide">
+<hr>
+<form>
+    <div class="form-group">
+        <label for="exampleTextarea">WOD Notes</label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+<hr>
+</div>
+<a href="#" class="btn btn-success">Record Stats</a>
     <a href="#" class="btn btn-danger">Save WOD</a>
     <a href="#" class="btn btn-outline-secondary">Update Stats</a>
     </div>
 </div><div class="card">
-    <h3 class="card-header">Friday 180209</h3>
+    <h3 class="card-header" class="title">Friday 180209</h3>
     <div class="card-block">
 <h4 class="card-title">Kelly 5 rounds for time of: Run 400 meters 30 box jumps 30 wall-ball shots Men: 24-inch box, 20-lb. ball Women: 20-inch box,
     14-lb. ball</h4>
@@ -70,14 +94,45 @@
     Intermediate Option 4 rounds for time of: Run 400 meters 30 box jumps 30 wall-ball shots Men: 24-inch box, 20-lb. ball
     Women: 20-inch box, 14-lb. ball Beginner Option 3 rounds for time of: Run 400 meters 20 box step-ups 30 squats Men: 20-inch
     box Women: 16-inch box</p>
-    <a href="#" class="btn btn-success">Enter Stats</a>
+    <div id="statWrapper" class="hide">
+    <hr>
+    <form>
+        <div class="form-group">
+            <label for="exampleTextarea">WOD Notes</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+    <hr>
+    </div>
+    <!-- When writing note buttons below are hidden. Buttons appear after notes are saved  -->
+    <a href="#" class="btn btn-success">Record Stats</a>
     <a href="#" class="btn btn-danger">Save WOD</a>
     <a href="#" class="btn btn-outline-secondary">Update Stats</a>
     </div>
 </div>
-
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end">
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</nav>
 </div>
 
 </div>
 </body>
+<script src="stats.js"></script>
 </html>

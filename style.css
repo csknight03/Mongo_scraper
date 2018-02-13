@@ -39,3 +39,21 @@
 .card-header {
     background-color: lightgray !important;
 }
+
+.title {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.title:hover {
+    color: rgb(53, 56, 57) !important;
+}
+
+.pagination {
+    margin-right: 20px;
+
+}
+
+.hide {
+    display: none;
+}
